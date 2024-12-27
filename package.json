@@ -1,0 +1,19 @@
+{
+  "name": "cf-flathub-reverse-proxy",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "cf-typegen": "wrangler types",
+    "fmt": "biome format --write ./src",
+    "lint": "biome lint ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "typescript": "^5.5.2",
+    "wrangler": "^3.60.3"
+  }
+}
